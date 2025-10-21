@@ -9,6 +9,43 @@ const upload = multer({ dest: "uploads/audio/" });
 
 const predict_audio = path.resolve("python_files/predict_audio.py");
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 router.post("/predict-audio", upload.single("audio"), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: "No audio file uploaded" });

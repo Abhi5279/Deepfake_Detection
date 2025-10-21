@@ -5,7 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      roboto: ['Roboto', 'sans-serif'],
+    },
   },
   plugins: [],
 }
